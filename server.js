@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.render('about');
+  res.render('about', { layout: 'darkMode' });
 });
 
 app.get('/contact', (req, res) => {
